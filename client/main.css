@@ -11,9 +11,9 @@
 .burger-menu {
   margin: 10px;
   cursor: pointer;
-  background: white;
+  background: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   box-shadow: none;
   outline: none;
   border-radius: 50%;
