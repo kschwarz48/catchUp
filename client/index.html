@@ -7,16 +7,20 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Catch-Up</title>
   </head>
   <body>
-    <nav style="background: url(560_lt_cad_red__10670.1418750803.480.480.jpg)">
+    <nav
+      style="
+        background: url(images/560_lt_cad_red__10670.1418750803.480.480.jpg);
+      "
+    >
       <ul class="nav__elements">
         <li class="nav__li">
           <a class="head__logo" href="index.html"
-            ><img src="catchUpLogo.png" alt="logo"
+            ><img src="images/catchUpLogo.png" alt="logo"
           /></a>
         </li>
         <li class="nav__li nav__button">
@@ -40,7 +44,7 @@
         <div class="section__column">
           <img
             class="front__image section1"
-            src="placeholder.png"
+            src="images/placeholder.png"
             alt="placeholder"
           />
         </div>
@@ -56,13 +60,13 @@
       </section>
 
       <section
-        style="background: url(light-grey-background.png)"
+        style="background: url(images/light-grey-background.png)"
         class="section"
       >
         <div class="section__column">
           <img
             class="front__image section2"
-            src="placeholder.png"
+            src="images/placeholder.png"
             alt="placeholder"
           />
         </div>
@@ -78,7 +82,9 @@
       </section>
     </main>
     <footer
-      style="background: url(560_lt_cad_red__10670.1418750803.480.480.jpg)"
+      style="
+        background: url(images/560_lt_cad_red__10670.1418750803.480.480.jpg);
+      "
     >
       <ul>
         <li>
@@ -94,17 +100,5 @@
       <button class="header__button"><a href="login.html">Login</a></button>
     </nav>
   </body>
-  <script type="text/javascript">
-    function toggleMobileMenu() {
-      document.querySelector(".mobile-nav-menu").classList.toggle("hidden");
-    }
-
-    document
-      .querySelector(".burger-menu")
-      .addEventListener("click", toggleMobileMenu);
-    document
-      .querySelector(".mobile-nav-menu__close-btn")
-      .addEventListener("click", () => toggleMobileMenu());
-    console.log(document.querySelector("section"));
-  </script>
+  <script src="js/main.js"></script>
 </html>
