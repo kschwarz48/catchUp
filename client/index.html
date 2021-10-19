@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Catch-Up</title>
+  </head>
+  <body>
+    <nav style="background: url(560_lt_cad_red__10670.1418750803.480.480.jpg)">
+      <ul class="nav__elements">
+        <li class="nav__li">
+          <a class="head__logo" href="index.html"
+            ><img src="catchUpLogo.png" alt="logo"
+          /></a>
+        </li>
+        <li class="nav__li nav__button">
+          <button class="header__button"><a href="login.html">Login</a></button>
+          <button class="burger-menu">☰</button>
+        </li>
+      </ul>
+    </nav>
+    <main class="front">
+      <header>
+        <h1 class="front__title">Catch-Up</h1>
+        <p class="front__title__subtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          hendrerit, nisl a molestie dapibus, diam eros vehicula mi, eget
+          dignissim arcu neque vitae dolor.
+        </p>
+        <button class="header__button"><a href="login.html">Login</a></button>
+      </header>
+
+      <section class="section">
+        <div class="section__column">
+          <img
+            class="front__image section1"
+            src="placeholder.png"
+            alt="placeholder"
+          />
+        </div>
+        <div class="section__column">
+          <div class="text__column">
+            <h2 class="front__subtitle">Lorem ipsum dolor sit amet</h2>
+            <p class="front__subtext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              ultrices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        style="background: url(light-grey-background.png)"
+        class="section"
+      >
+        <div class="section__column">
+          <img
+            class="front__image section2"
+            src="placeholder.png"
+            alt="placeholder"
+          />
+        </div>
+        <div class="section__column">
+          <div class="text__column">
+            <h2 class="front__subtitle">
+              Ready to compete with you friends and family?
+            </h2>
+            <p class="front__subtext">Get started now with a free account!</p>
+            <a class="section__nav" href="login.html">Login</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      style="background: url(560_lt_cad_red__10670.1418750803.480.480.jpg)"
+    >
+      <ul>
+        <li>
+          <a class="footer__nav" href="index.html">Home</a>
+        </li>
+        <li><a class="footer__nav" href="about.html">About</a></li>
+        <li><a class="footer__nav" href="login.html">Login/Sign-Up</a></li>
+      </ul>
+    </footer>
+
+    <nav class="mobile-nav-menu hidden">
+      <button class="mobile-nav-menu__close-btn">✖</button>
+      <button class="header__button"><a href="login.html">Login</a></button>
+    </nav>
+  </body>
+  <script type="text/javascript">
+    function toggleMobileMenu() {
+      document.querySelector(".mobile-nav-menu").classList.toggle("hidden");
+    }
+
+    document
+      .querySelector(".burger-menu")
+      .addEventListener("click", toggleMobileMenu);
+    document
+      .querySelector(".mobile-nav-menu__close-btn")
+      .addEventListener("click", () => toggleMobileMenu());
+    console.log(document.querySelector("section"));
+  </script>
+</html>
