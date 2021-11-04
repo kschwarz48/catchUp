@@ -1,7 +1,15 @@
+nav {
+  background: #9cd7f1;
+}
+
 .head__logo {
   padding: 50px 0 30px 50px;
   display: flex;
   align-items: center;
+}
+
+.logo__img {
+  width: 25px;
 }
 
 .burger-menu {
@@ -106,7 +114,7 @@ header {
   margin: auto;
   margin-top: -80px;
   width: 100%;
-  background: url(../images/560_lt_cad_red__10670.1418750803.480.480.jpg);
+  background-color: #9cd7f1;
   text-align: center;
 }
 
