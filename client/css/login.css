@@ -3,6 +3,18 @@ body {
   align-items: center;
   width: 100%;
 }
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
 main {
   background-color: rgb(53, 51, 65);
   display: flex;
@@ -15,6 +27,7 @@ main {
   font-family: "Roboto", sans-serif;
   align-items: center;
   justify-items: left;
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
 }
 
 form {
