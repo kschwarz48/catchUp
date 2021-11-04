@@ -1,34 +1,26 @@
 <html>
   <head>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <h1>Weight Loss Competition</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="login.html">Login</a>
-    </nav>
     <main>
-      <label for="login">Login</label>
+      <h1 class="header__text">Welcome back!</h1>
+      <p class="header__subtext">We're happy to see you're catching up!</p>
       <form action="/login" method="post">
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Enter Email Address"
-        />
-        <input
-          type="password"
-          name="password"
-          required
-          placeholder="Enter Password"
-        />
-        <button type="submit">Login</button>
+        <h2 class="login__label">email</h2>
+        <input class="login__input" type="email" name="email" required />
+        <h2 class="login__label">password</h2>
+        <input class="login__input" type="password" name="password" required />
+        <a class="forgot" href="forgot.html">Forgot Password?</a>
+        <button class="login__button" type="submit">Login</button>
       </form>
       <!-- TODO: style forgot password button -->
-      <a href="forgot.html">Forgot Password?</a>
-      <p>Need Account? <a href="register.html">Register</a></p>
+
+      <p class="register">
+        Need Account?
+        <a class="register__button" href="register.html">Register</a>
+      </p>
     </main>
   </body>
 </html>
