@@ -54,6 +54,20 @@ form {
   font-family: "Roboto", sans-serif;
   margin: 10 0 10 0;
   border: none;
+  background-color: rgb(43, 41, 53);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(43, 41, 53) inset !important;
+}
+
+input,
+select,
+textarea {
+  color: #fff;
 }
 
 .login__label {
@@ -86,7 +100,7 @@ a:visited {
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
-  background-color: #fff;
+  background-color: #f65552;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -101,7 +115,7 @@ a:visited {
   background-color: #de3a39;
   box-shadow: 0px 15px 20px black;
   color: #fff;
-  transform: translateY(-7px);
+  transform: translateY(-4.5px);
 }
 
 .register {
