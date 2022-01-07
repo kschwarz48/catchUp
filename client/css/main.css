@@ -52,9 +52,13 @@ nav {
   right: 0;
 }
 
+.header__button.is-active {
+  display: none;
+}
+
 .mobile-nav-menu__close-btn {
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(231, 231, 231);
   top: 24px;
   right: 24px;
   border: none;
