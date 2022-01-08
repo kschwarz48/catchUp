@@ -11,92 +11,104 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Catch-Up</title>
   </head>
+
   <body>
-    <nav>
-      <ul class="nav__elements">
-        <li class="nav__li">
-          <a class="head__logo" href="index.html"
-            ><img
-              class="logo__img"
-              src="images/PinClipart.com_cute-ketchup-clipart_3534576.png"
-              alt="logo"
-          /></a>
-        </li>
-        <li class="nav__li nav__button">
+    <div class="mobile__toggle">
+      <nav>
+        <ul class="nav__elements">
+          <li class="nav__li">
+            <a class="head__logo" href="index.html"
+              ><img
+                class="logo__img"
+                src="images/PinClipart.com_cute-ketchup-clipart_3534576.png"
+                alt="logo"
+            /></a>
+          </li>
+          <li class="nav__li nav__button">
+            <button class="header__button">
+              <a href="login.html">Login</a>
+            </button>
+            <button class="burger-menu">☰</button>
+          </li>
+        </ul>
+      </nav>
+      <main class="front">
+        <header>
+          <h1 class="front__title">Catch-Up</h1>
+          <p class="front__title__subtext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+            hendrerit, nisl a molestie dapibus, diam eros vehicula mi, eget
+            dignissim arcu neque vitae dolor.
+          </p>
           <button class="header__button"><a href="login.html">Login</a></button>
-          <button class="burger-menu">☰</button>
-        </li>
-      </ul>
-    </nav>
-    <main class="front">
-      <header>
-        <h1 class="front__title">Catch-Up</h1>
-        <p class="front__title__subtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-          hendrerit, nisl a molestie dapibus, diam eros vehicula mi, eget
-          dignissim arcu neque vitae dolor.
-        </p>
-        <button class="header__button"><a href="login.html">Login</a></button>
-      </header>
+        </header>
 
-      <section class="section">
-        <div class="section__column">
-          <img
-            class="front__image section1"
-            src="images/placeholder.png"
-            alt="placeholder"
-          />
-        </div>
-        <div class="section__column">
-          <div class="text__column">
-            <h2 class="front__subtitle">Lorem ipsum dolor sit amet</h2>
-            <p class="front__subtext">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ultrices.
-            </p>
+        <section class="section">
+          <div class="section__column">
+            <img
+              class="front__image section1"
+              src="images/placeholder.png"
+              alt="placeholder"
+            />
           </div>
-        </div>
-      </section>
+          <div class="section__column">
+            <div class="text__column">
+              <h2 class="front__subtitle">Lorem ipsum dolor sit amet</h2>
+              <p class="front__subtext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                ultrices.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <section
-        style="background: url(images/light-grey-background.png)"
-        class="section"
+        <section
+          style="background: url(images/light-grey-background.png)"
+          class="section"
+        >
+          <div class="section__column">
+            <img
+              class="front__image section2"
+              src="images/placeholder.png"
+              alt="placeholder"
+            />
+          </div>
+          <div class="section__column">
+            <div class="text__column">
+              <h2 class="front__subtitle">
+                Ready to compete with you friends and family?
+              </h2>
+              <p class="front__subtext">Get started now with a free account!</p>
+              <a class="section__nav" href="login.html">Login</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        style="
+          background: url(images/560_lt_cad_red__10670.1418750803.480.480.jpg);
+        "
       >
-        <div class="section__column">
-          <img
-            class="front__image section2"
-            src="images/placeholder.png"
-            alt="placeholder"
-          />
-        </div>
-        <div class="section__column">
-          <div class="text__column">
-            <h2 class="front__subtitle">
-              Ready to compete with you friends and family?
-            </h2>
-            <p class="front__subtext">Get started now with a free account!</p>
-            <a class="section__nav" href="login.html">Login</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      style="
-        background: url(images/560_lt_cad_red__10670.1418750803.480.480.jpg);
-      "
-    >
-      <ul>
-        <li>
-          <a class="footer__nav" href="index.html">Home</a>
-        </li>
-        <li><a class="footer__nav" href="about.html">About</a></li>
-        <li><a class="footer__nav" href="login.html">Login/Sign-Up</a></li>
-      </ul>
-    </footer>
-
+        <ul>
+          <li>
+            <a class="footer__nav" href="index.html">Home</a>
+          </li>
+          <li><a class="footer__nav" href="about.html">About</a></li>
+          <li><a class="footer__nav" href="login.html">Login/Sign-Up</a></li>
+        </ul>
+      </footer>
+    </div>
     <nav class="mobile-nav-menu">
       <button class="mobile-nav-menu__close-btn">✖</button>
+      <div class="spacer__mobile__1"></div>
+      <ul>
+        <li><a class="mobile__nav__link home" href="index.html">Home</a></li>
+        <li>
+          <a class="mobile__nav__link" href="download.html">Download</a>
+        </li>
+      </ul>
     </nav>
   </body>
+
   <script src="js/main.js"></script>
 </html>

@@ -30,7 +30,7 @@ nav {
   height: 48px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .burger-menu {
     display: none;
   }
@@ -45,7 +45,7 @@ nav {
   top: 0;
   background: white;
   border-top-left-radius: 10px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .mobile-nav-menu.is-active {
@@ -54,6 +54,15 @@ nav {
 
 .header__button.is-active {
   display: none;
+}
+
+.mobile__toggle.is-active {
+  filter: grayscale(25%);
+  transition: 0.4s;
+}
+
+.mobile__nav__link.home.is-active {
+  color: #de3a39;
 }
 
 .mobile-nav-menu__close-btn {
@@ -65,7 +74,23 @@ nav {
   box-shadow: none;
   width: 24px;
   height: 24px;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.mobile__nav__link.home {
+  margin-top: 100px;
+}
+
+.mobile__nav__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin: 20px 0 20px 30px;
+}
+
+.mobile__nav__link:hover {
+  text-decoration: underline;
 }
 
 .nav__login {
@@ -134,7 +159,6 @@ header {
 
 .front__title__subtext {
   width: 50%;
-  margin: auto;
   margin-top: 45px;
   margin-bottom: 45px;
 }
