@@ -1,5 +1,5 @@
 body {
-  background: url(../images/3390fa5037ff9d9f57436625f10ea5e0.png);
+  background: url(../images/loginBackground.jpeg);
   align-items: center;
   width: 100%;
 }
@@ -76,6 +76,7 @@ input:-webkit-autofill:active {
 
 a {
   color: rgb(137, 208, 255);
+  text-decoration: none;
 }
 
 a:visited {
