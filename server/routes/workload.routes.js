@@ -13,7 +13,8 @@ function registerRoutes(router) {
       !workload.endDate ||
       !workload.startDate ||
       !workload.type ||
-      !workload.name
+      !workload.name ||
+      !workload.color
     ) {
       return res.send("Please fill all fields.");
     }
@@ -27,6 +28,9 @@ function registerRoutes(router) {
     }
     if (!Competition.types.includes(workload.type)) {
       return res.send("Competition type does not exist.");
+    }
+    if (!Competition.color.includes(workload.color)) {
+      return res.send("Color does not exist.");
     }
     try {
       const collection = db.collection("workload");
