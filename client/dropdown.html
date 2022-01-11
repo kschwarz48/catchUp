@@ -1,0 +1,135 @@
+<html>
+  <style>
+    body {
+      background: gray;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px;
+      background: white;
+      border-radius: 5px;
+      max-width: 145px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .color {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .red {
+      background: red;
+    }
+
+    .green {
+      background: green;
+    }
+
+    .blue {
+      background: blue;
+    }
+
+    .chevron {
+      cursor: pointer;
+    }
+
+    .chevron:hover svg path {
+      fill: blue;
+    }
+
+    .options {
+      display: none;
+      position: absolute;
+      bottom: -173px;
+      left: 0;
+      width: 145px;
+      background: white;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .options li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+    }
+
+    .options li:first-of-type {
+      padding-top: 13px;
+    }
+
+    .options li:hover {
+      background-color: lightblue;
+      transition: all 150ms ease-in-out;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="color red current-color"></div>
+      <div class="chevron">
+        <svg
+          width="24"
+          height="14"
+          viewBox="0 0 24 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.9492 13.0641C11.5369 13.648 12.4867 13.6449 13.0705 13.0572L22.5854 3.48024C23.1692 2.89255 23.1661 1.9428 22.5785 1.35893C21.9908 0.77505 21.041 0.778141 20.4571 1.36583L11.9995 9.87869L3.48667 1.42107C2.89898 0.83719 1.94924 0.840281 1.36536 1.42797C0.781484 2.01566 0.784575 2.9654 1.37227 3.54928L10.9492 13.0641ZM10.5032 11.0049L10.5064 12.0049L13.5064 11.9951L13.5032 10.9951L10.5032 11.0049Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+
+      <ul class="options">
+        <li data-color="green">
+          <div class="color green"></div>
+          Green
+        </li>
+
+        <li data-color="blue">
+          <div class="color blue"></div>
+          Blue
+        </li>
+
+        <li data-color="red">
+          <div class="color red"></div>
+          Red
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    let dropdownOpen = false;
+    let currentColor = "red";
+    document.querySelector(".chevron").addEventListener("click", () => {
+      dropdownOpen = !dropdownOpen;
+      document.querySelector(".options").style.display = dropdownOpen
+        ? "flex"
+        : "none";
+    });
+
+    document.querySelectorAll(".options li")?.forEach((el) =>
+      el.addEventListener("click", (e) => {
+        console.log(e.target.dataset.color);
+
+        document.querySelector(".current-color").classList.remove(currentColor);
+        currentColor = e.target.dataset.color;
+        document.querySelector(".current-color").classList.add(currentColor);
+      })
+    );
+  </script>
+</html>
