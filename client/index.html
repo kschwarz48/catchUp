@@ -4,6 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -11,10 +17,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Catch-Up</title>
   </head>
-  <select>
-    <option value="">This is label</option>
-  </select>
-
   <body>
     <div class="mobile__toggle">
       <nav>
@@ -87,18 +89,48 @@
           </div>
         </section>
       </main>
-      <footer
-        style="
-          background: url(images/560_lt_cad_red__10670.1418750803.480.480.jpg);
-        "
-      >
-        <ul>
-          <li>
-            <a class="footer__nav" href="index.html">Home</a>
-          </li>
-          <li><a class="footer__nav" href="about.html">About</a></li>
-          <li><a class="footer__nav" href="login.html">Login/Sign-Up</a></li>
-        </ul>
+      <footer>
+        <h2 class="footer__logo">Catch Up</h2>
+        <div class="footer__link__container">
+          <ul class="footer__nav">
+            <li class="footer__links">
+              <a class="footer__a" href="about.html">About</a>
+            </li>
+            <li class="footer__links">
+              <a class="footer__a" href="login.html">Blog</a>
+            </li>
+            <li class="footer__links">
+              <a class="footer__a" href="about.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer__nav legal">
+            <li class="footer__links">
+              <a class="footer__a" href="">Get Help</a>
+            </li>
+            <li class="footer__links">
+              <a class="footer__a" href="">Terms & Conditions</a>
+            </li>
+            <li class="footer__links">
+              <a class="footer__a" href="">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="spacer__line" />
+        <div class="social__container">
+          <a href="https://www.facebook.com"
+            ><img
+              class="social__icons"
+              src="images/facebook.png"
+              alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com">
+            <img
+              class="social__icons"
+              src="images/instagram.png"
+              alt="instagram"
+          /></a>
+          <p class="copyright">© 2022 Catch Up Technologies Inc.</p>
+        </div>
       </footer>
     </div>
     <nav class="mobile-nav-menu">
