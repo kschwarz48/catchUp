@@ -1,0 +1,65 @@
+.nav__elements {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav__li {
+  display: inline-block;
+}
+
+.head__logo {
+  padding: 50px 0 30px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  width: 25px;
+}
+
+.nav__button {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  padding-top: 15px;
+}
+
+.header__button.is-active {
+  display: none;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.header__button:hover {
+  background-color: #de3a39;
+  box-shadow: 0px 15px 20px black;
+  color: #fff;
+  transform: translateY(-4.5px);
+}
+
+nav {
+  background: #cff5ff;
+}
