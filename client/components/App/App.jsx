@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 import FrontPage from "../FrontPage/FrontPage";
 import "./app.css";
 import RegisterPage from "../RegisterPage/RegisterPage";
-import "./reset.css";
+// import "./reset.css";      reset.css messed everything up NEEDS REVIEW
 
 const App = () => {
   const [name, setName] = useState("");
