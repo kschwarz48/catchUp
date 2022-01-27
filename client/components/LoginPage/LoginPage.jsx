@@ -20,7 +20,7 @@ const LoginPage = () => {
             name="password"
             required
           />
-          <Link className="login__link forgot" to="/forgot">
+          <Link className="login__link forgot" to="/dropdown">
             Forgot Password?
           </Link>
           <button className="login__button" type="submit">
