@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: white;
+  border-radius: 5px;
+  max-width: 145px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.color {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.chevron {
+  cursor: pointer;
+}
+
+.chevron:hover svg path {
+  fill: blue;
+}
+
+.options {
+  display: flex;
+  position: absolute;
+  bottom: -173px;
+  left: 0;
+  width: 145px;
+  background: white;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.options li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.options li:first-of-type {
+  padding-top: 13px;
+}
+
+.options li:hover {
+  background-color: lightblue;
+  transition: all 150ms ease-in-out;
+}
