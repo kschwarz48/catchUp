@@ -8,6 +8,7 @@ import FrontPage from "../FrontPage/FrontPage";
 import "./app.css";
 import RegisterPage from "../RegisterPage/RegisterPage";
 import Dropdown from "../generic/Dropdown/Dropdown";
+import Forgot from "../Forgot/Forgot";
 // import "./reset.css";      reset.css messed everything up NEEDS REVIEW
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dropdown" element={<Dropdown />} />
+        <Route path="/forgot" element={<Forgot />} />
       </Routes>
       <Footer></Footer>
     </div>

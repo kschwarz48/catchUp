@@ -27,7 +27,7 @@ const Footer = () => {
         </ul>
         <ul className="footer__nav legal">
           <li className="footer__links">
-            <Link className="footer__a" to="">
+            <Link className="footer__a" to="/dropdown">
               Get Help
             </Link>
           </li>
