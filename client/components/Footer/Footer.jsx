@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className="footer__links">
-            <Link className="footer__a" to="">
+            <Link className="footer__a" to="/submit">
               Terms & Conditions
             </Link>
           </li>
