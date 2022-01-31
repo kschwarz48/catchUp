@@ -12,7 +12,7 @@ const FrontPage = () => {
           hendrerit, nisl a molestie dapibus, diam eros vehicula mi, eget
           dignissim arcu neque vitae dolor.
         </p>
-        <button className="header__button">
+        <button className="front__button">
           <Link to="/login">Login</Link>
         </button>
       </header>
