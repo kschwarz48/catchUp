@@ -9,7 +9,7 @@ const SubmitButton = () => {
   };
 
   return (
-    <main>
+    <div className="btn__main">
       <button
         className={isAnimating ? "btn animating" : "btn"}
         onClick={AnimateBtn}
@@ -28,7 +28,7 @@ const SubmitButton = () => {
           <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" />
         </svg>
       </div>
-    </main>
+    </div>
   );
 };
 
