@@ -3,20 +3,17 @@ import "./dropdown.css";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const currentColor = "red";
+  const [currentColor, setCurrentColor] = useState("red");
 
-  function handleChoice(e) {
-    console.log(e.target.dataset.color);
-    classList.remove(currentColor);
-    currentColor = e.target.dataset.color;
-    classList.add(currentColor);
+  function handleChoice(color) {
+    setCurrentColor(color);
   }
 
   return (
     <React.Fragment>
       <main>
         <div className="container">
-          <div className="color red current-color"></div>
+          <div className={`color ${currentColor} current-color`}></div>
           <div
             onClick={() => {
               setIsOpen(!isOpen);
@@ -38,17 +35,17 @@ const Dropdown = () => {
           </div>
           {isOpen && (
             <ul className="options">
-              <li onClick={handleChoice} data-color="green">
+              <li onClick={() => handleChoice("green")}>
                 <div className="color green"></div>
                 Green
               </li>
 
-              <li onClick={handleChoice} data-color="blue">
+              <li onClick={() => handleChoice("blue")}>
                 <div className="color blue"></div>
                 Blue
               </li>
 
-              <li onClick={handleChoice} data-color="red">
+              <li onClick={() => handleChoice("red")}>
                 <div className="color red"></div>
                 Red
               </li>
