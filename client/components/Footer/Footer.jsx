@@ -5,7 +5,7 @@ import "./footer.css";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="main__footer">
       <h2 className="footer__logo">Catch Up</h2>
       <div className="footer__link__container">
         <ul className="footer__nav">
