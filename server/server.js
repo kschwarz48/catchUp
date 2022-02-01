@@ -1,21 +1,17 @@
-const fs = require("fs");
 const bodyParser = require("body-parser");
 const express = require("express");
 const authRoutes = require("./routes/auth.routes");
 const { default: database } = require("./database");
 const { default: workloadRoutes } = require("./routes/workload.routes");
-const path = require("path");
-const { createServer: createViteServer } = require("vite");
 
 const cookieParser = require("cookie-parser");
 const sessions = require("express-session");
-const res = require("express/lib/response");
 
 const app = express();
 const port = 3001;
 
-// app.use("/", express.static("client"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(cookieParser());
 const oneDay = 1000 * 60 * 15;
 app.use(
@@ -32,7 +28,7 @@ authRoutes.registerRoutes(app);
 workloadRoutes.registerRoutes(app);
 
 app.use("*", (req, res) => {
-  res.send("Hello WORLD")
+  res.send("Hello World");
 });
 
 app.listen(port, () => {
