@@ -4,14 +4,17 @@ const express = require("express");
 const authRoutes = require("./routes/auth.routes");
 const { default: database } = require("./database");
 const { default: workloadRoutes } = require("./routes/workload.routes");
+const path = require("path");
+const { createServer: createViteServer } = require("vite");
 
 const cookieParser = require("cookie-parser");
 const sessions = require("express-session");
+const res = require("express/lib/response");
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
-app.use("/", express.static("client"));
+// app.use("/", express.static("client"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 const oneDay = 1000 * 60 * 15;
@@ -27,6 +30,10 @@ app.use(
 database.connect();
 authRoutes.registerRoutes(app);
 workloadRoutes.registerRoutes(app);
+
+app.use("*", (req, res) => {
+  res.send("Hello WORLD")
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

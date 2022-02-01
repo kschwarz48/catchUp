@@ -5,7 +5,7 @@ import "./frontPage.css";
 const FrontPage = () => {
   return (
     <main className="front">
-      <header>
+      <header className="header__front">
         <h1 className="front__title">Catch-Up</h1>
         <p className="front__title__subtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
