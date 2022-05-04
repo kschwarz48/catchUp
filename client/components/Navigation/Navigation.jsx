@@ -10,11 +10,7 @@ const Navigation = () => {
         <ul className="nav__elements">
           <li className="nav__li">
             <NavLink className="head__logo" to="/">
-              <img
-                className="logo__img"
-                src="images/PinClipart.com_cute-ketchup-clipart_3534576.png"
-                alt="logo"
-              />
+              <h1>Catch-Up</h1>
             </NavLink>
           </li>
           <li className="nav__li nav__button">
