@@ -37,8 +37,8 @@ const Footer = () => {
             </Link>
           </li>
           <li className="footer__links">
-            <Link className="footer__a" to="/currentCompetitionButton">
-              Privacy
+            <Link className="footer__a" to="/componentLibrary">
+              Component Library
             </Link>
           </li>
         </ul>
