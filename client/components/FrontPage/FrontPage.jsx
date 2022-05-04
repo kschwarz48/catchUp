@@ -8,7 +8,7 @@ const FrontPage = () => {
       <header className="header__front">
         {/* <p className="front__title__subtext">It's time to Catch Up!</p> */}
         <button className="front__button">
-          <Link to="/login">Create Account</Link>
+          <Link to="/register">Create Account</Link>
         </button>
       </header>
 
