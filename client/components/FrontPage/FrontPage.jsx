@@ -6,12 +6,7 @@ const FrontPage = () => {
   return (
     <main className="front">
       <header className="header__front">
-        <h1 className="front__title">Catch-Up</h1>
-        <p className="front__title__subtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-          hendrerit, nisl a molestie dapibus, diam eros vehicula mi, eget
-          dignissim arcu neque vitae dolor.
-        </p>
+        {/* <p className="front__title__subtext">It's time to Catch Up!</p> */}
         <button className="front__button">
           <Link to="/login">Login</Link>
         </button>
@@ -21,16 +16,17 @@ const FrontPage = () => {
         <div className="section__column">
           <img
             className="front__image section1"
-            src="images/placeholder.png"
+            src="images/background-run-one.jpg"
             alt="placeholder"
           />
         </div>
         <div className="section__column">
           <div className="text__column">
-            <h2 className="front__subtitle">Lorem ipsum dolor sit amet</h2>
+            <h2 className="front__subtitle">
+              Don't get down if you've fallen behind.
+            </h2>
             <p className="front__subtext">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ultrices.
+              Grab a buddy and get moving. It's time to Catch Up!
             </p>
           </div>
         </div>
@@ -40,7 +36,7 @@ const FrontPage = () => {
         <div className="section__column">
           <img
             className="front__image section2"
-            src="images/placeholder.png"
+            src="images/background-run-two.jpg"
             alt="placeholder"
           />
         </div>
@@ -52,9 +48,9 @@ const FrontPage = () => {
             <p className="front__subtext">
               Get started now with a free account!
             </p>
-            <Link className="section__nav" to="/login">
-              Login
-            </Link>
+            <button className="front__button__create">
+              <Link to="/login">Create Account</Link>
+            </button>
           </div>
         </div>
       </section>
