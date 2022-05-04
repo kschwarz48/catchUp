@@ -11,15 +11,15 @@ const Dropdown = () => {
 
   return (
     <React.Fragment>
-      <main>
-        <div className="container">
+      <main className="dropdown__main">
+        <div
+          className="container"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
           <div className={`color ${currentColor} current-color`}></div>
-          <div
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-            className="chevron"
-          >
+          <div className="chevron">
             <svg
               width="24"
               height="14"

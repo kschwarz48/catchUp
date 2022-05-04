@@ -1,14 +1,24 @@
+.dropdown__main {
+  min-height: 15vh;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
-  background: white;
+  background: black;
   border-radius: 5px;
   max-width: 145px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
+}
+
+.container:hover {
+  box-shadow: 0px 15px 20px black;
+  color: #fff;
+  transform: translateY(-4.5px);
 }
 
 .color {
@@ -30,27 +40,32 @@
   background: blue;
 }
 
-.chevron {
+.chevron svg path {
+  fill: white;
   cursor: pointer;
 }
 
 .chevron:hover svg path {
-  fill: blue;
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .options {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   display: flex;
   position: absolute;
   bottom: -173px;
   left: 0;
   width: 145px;
-  background: white;
+  background: black;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  color: white;
 }
 
 .options li {
