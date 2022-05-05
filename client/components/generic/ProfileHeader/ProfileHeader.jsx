@@ -4,7 +4,7 @@ import "./profileHeader.css";
 
 const ProfileHeader = () => {
   return (
-    <main className="profile__header__main">
+    <div className="profile__header__main">
       <div className="profile__header__container">
         <img src="../images/pfp.jpg" alt="placeholder" className="pfp" />
         <div className="profile__header__information">
@@ -22,7 +22,7 @@ const ProfileHeader = () => {
           <div className="achievements"></div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

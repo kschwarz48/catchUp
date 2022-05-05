@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -18,7 +19,7 @@
   width: 90vw;
   background-color: #ebebeb;
   border-radius: 5px;
-  margin: 40px 0;
+  padding: 0 24px;
 }
 
 .pfp {
@@ -36,7 +37,6 @@
   row-gap: 12px;
   justify-content: space-between 12px;
   width: 300px;
-  max-width: 300px;
 }
 
 .profile__buttons {
@@ -79,6 +79,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 .achievements {
@@ -86,6 +88,7 @@
   height: 200px;
   background-color: #37234c;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .achievements:hover {
@@ -93,4 +96,5 @@
   box-shadow: 0px 15px 20px black;
   color: #fff;
   transform: translateY(-4.5px);
+  transition-duration: 200ms;
 }
