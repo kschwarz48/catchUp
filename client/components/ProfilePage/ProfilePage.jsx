@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CurrentCompetitionButton from "../generic/CurrentCompetitionButton/CurrentCompetitionButton";
+import ProfileHeader from "../generic/ProfileHeader/ProfileHeader";
 import "./profilePage.css";
 
 const ProfilePage = () => {
   return (
     <main className="profile__container">
-      <div className="profile__head__container"></div>
-      <div className="competition__container">
-        <h2>Current Competitions</h2>
-        <CurrentCompetitionButton></CurrentCompetitionButton>
-        <CurrentCompetitionButton></CurrentCompetitionButton>
-        <CurrentCompetitionButton></CurrentCompetitionButton>
-      </div>
+      <ProfileHeader></ProfileHeader>
+      <h2 className="pf__competition__title">Current Competitions</h2>
+      <CurrentCompetitionButton></CurrentCompetitionButton>
+      <CurrentCompetitionButton></CurrentCompetitionButton>
+      <CurrentCompetitionButton></CurrentCompetitionButton>
     </main>
   );
 };
