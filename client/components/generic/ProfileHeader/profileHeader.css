@@ -23,8 +23,8 @@
 
 .pfp {
   margin: 25px;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   object-fit: cover;
   background-color: white;
@@ -33,10 +33,16 @@
 .profile__header__information {
   display: flex;
   flex-direction: column;
+  row-gap: 12px;
+  justify-content: space-between 12px;
+  width: 300px;
+  max-width: 300px;
 }
 
 .profile__buttons {
   display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .edit__profile__btn {
@@ -69,9 +75,22 @@
   transform: translateY(-4.5px);
 }
 
+.profile__header__achievements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
 .achievements {
-  width: 10vw;
-  height: 5vh;
-  background-color: rgb(37, 0, 71);
+  width: 340px;
+  height: 200px;
+  background-color: #37234c;
   border-radius: 5px;
+}
+
+.achievements:hover {
+  background-color: #37234c;
+  box-shadow: 0px 15px 20px black;
+  color: #fff;
+  transform: translateY(-4.5px);
 }
