@@ -1,13 +1,10 @@
 .btn__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  background: white;
   border-radius: 5px;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .currentCompetitionButton {
@@ -21,12 +18,14 @@
   height: 200px;
   background-color: #ff6060;
   padding: 24px;
+  cursor: pointer;
 }
 
 .currentCompetitionButton:hover {
   box-shadow: 0px 15px 20px black;
   color: #fff;
   transform: translateY(-4.5px);
+  transition-duration: 200ms;
 }
 
 .competitionImg {
@@ -63,4 +62,5 @@
 
 .svg {
   transform: rotate(-90deg);
+  margin-left: auto;
 }
