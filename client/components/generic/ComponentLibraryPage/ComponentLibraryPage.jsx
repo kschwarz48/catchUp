@@ -43,6 +43,15 @@ const ComponentLibraryPage = () => {
               <span></span>
             </li>
           </NavLink>
+          <NavLink to="/editProfile">
+            <li className="component__li">
+              edit profile
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </li>
+          </NavLink>
         </ul>
       </nav>
     </body>
