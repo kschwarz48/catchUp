@@ -1,5 +1,6 @@
 import reactDom from "react-dom";
 import react from "react";
+import { NavLink } from "react-router-dom";
 import "./profileHeader.css";
 
 const ProfileHeader = () => {
@@ -12,7 +13,9 @@ const ProfileHeader = () => {
           <p>Hidden Leaf Village</p>
           <p>Joined April 2022</p>
           <div className="profile__buttons">
-            <button className="edit__profile__btn">Edit Proffile</button>
+            <NavLink to="editProfilePage">
+              <button className="edit__profile__btn">Edit Proffile</button>
+            </NavLink>
             <p>SVG</p>
             <p>SVG</p>
           </div>

@@ -8,10 +8,12 @@ const ProfilePage = () => {
   return (
     <main className="profile__container">
       <ProfileHeader></ProfileHeader>
-      <h2 className="pf__competition__title">Current Competitions</h2>
-      <CurrentCompetitionButton></CurrentCompetitionButton>
-      <CurrentCompetitionButton></CurrentCompetitionButton>
-      <CurrentCompetitionButton></CurrentCompetitionButton>
+      <div className="competitions__container">
+        <h2 className="pf__competition__title">Current Competitions</h2>
+        <CurrentCompetitionButton></CurrentCompetitionButton>
+        <CurrentCompetitionButton></CurrentCompetitionButton>
+        <CurrentCompetitionButton></CurrentCompetitionButton>
+      </div>
     </main>
   );
 };
