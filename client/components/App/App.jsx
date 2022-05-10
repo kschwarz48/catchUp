@@ -14,6 +14,8 @@ import CurrentCompetitionButton from "../generic/CurrentCompetitionButton/Curren
 import ComponentLibraryPage from "../generic/ComponentLibraryPage/ComponentLibraryPage";
 import ProfilePage from "../ProfilePage/ProfilePage";
 import ProfileHeader from "../generic/ProfileHeader/ProfileHeader";
+import EditProfile from "../generic/EditProfile/EditProfile";
+import EditProfilePage from "../EditProfilePage/EditProfilePage";
 // import "./reset.css";      reset.css messed everything up NEEDS REVIEW
 
 const App = () => {
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/componentLibrary" element={<ComponentLibraryPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profileHeader" element={<ProfileHeader />} />
+        <Route path="/editProfile" element={<EditProfile />} />
+        <Route path="profile/editProfilePage" element={<EditProfilePage />} />
       </Routes>
       <Footer></Footer>
     </div>
