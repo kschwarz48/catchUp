@@ -10,6 +10,89 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.pfp__edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pfp__preview {
+  margin: 25px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.pfp__file__upload {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.pfp__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff6060;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.pfp__btn:hover {
+  background-color: #ff6060;
+  box-shadow: 0px 15px 20px black;
+  color: #fff;
+  transform: translateY(-4.5px);
+}
+
+.edit__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edit__content__container {
+  display: flex;
+  align-items: center;
+  background-color: #c4c4c4;
+  height: 50px;
+  width: 80vw;
+  border: none;
+  border-radius: 5px;
+}
+
+.user__content {
+  font: 1em sans-serif;
+  font-weight: bold;
+  color: green;
+  padding-left: 10px;
+}
+
+.edit_subtitles {
+  min-width: 110px;
+  white-space: nowrap;
+}
+
 .edit__spacer__line {
   rotate: 33%;
   text-align: center;
