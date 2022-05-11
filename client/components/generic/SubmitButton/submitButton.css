@@ -1,12 +1,3 @@
-.btn__main {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 10vh;
-  margin: 0;
-}
-
 :root {
   --squish-animation-time: 500ms;
   --progress-animation-time: 1000ms;
