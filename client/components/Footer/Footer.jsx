@@ -16,7 +16,7 @@ const Footer = () => {
           </li>
           <li className="footer__links">
             <Link className="footer__a" to="/login">
-              Blog
+              Blogg
             </Link>
           </li>
           <li className="footer__links">
